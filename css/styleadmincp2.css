@@ -1,0 +1,652 @@
+/* ----------------------------------------Thiết lập cơ bản---------------------------------------- */
+:root {
+    font-family: 'Roboto';
+    font-size: 22px;
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.space-between {
+    justify-content: space-between;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center; /* Center này canh giữa ô cho phần tử trong header */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.row2{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ----------------------------------------Header-------------------------------------------------- */
+.top {
+    padding: 12px 0;
+    width: 100%;
+    background-color: black;
+}
+.title {
+    display: flex;
+    left: 0;
+}
+.title h3 {
+    color: white;
+    text-align: center;
+}
+.logout-text {   
+    display: flex;
+    right: 0;
+}
+.logout-text h5{ 
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+/* ----------------------------------------Main-------------------------------------------------- */
+.logout {
+    padding-top: 25px
+}
+.logout-left {
+    width: 15%;
+}
+.logout-right {
+    width: 85%;
+    border-left: 1px solid #dddddd;
+    padding-left: 35px;
+    margin-bottom: 35px;
+}
+.logout-right-top-text:first-child {
+    flex: 2;
+    font-size: 16px;
+    font-family: var(--main-text-font);
+    /* font-weight: bold; */
+}
+.logout-right-top-text {
+    flex: 1;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+.logout-right-top-text p {
+    color: white;
+    text-align: center;
+}
+.logout-left ul li {
+    padding: 12px 0;
+}
+.logout-left ul li>a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--main-text-font);
+}
+.logoutleft ul li ul li {
+    padding-left: 10px;
+}
+/* .introduce-left-li ul{
+    display: none;
+} */
+.logout-left-li.block ul {
+    display: block;
+}
+.logout-left ul li ul li a {
+    color: #333333;
+    font-size: 12px;
+    
+}
+.logout-left ul li a:hover {
+    text-decoration: underline;
+    padding-left: 40px;
+    transition: 0.5s;
+    color: red;
+}
+.logout-left-li ul li a {
+    padding-left: 30px;
+    
+}
+.logout-left-li {
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+/* .introduce-left-li ul{
+    padding-left: 20px;
+} */
+.logout-right-customer {
+    width: 100%;
+    padding-left: 35px;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.logout-right-customer p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    word-spacing: 0.5px;
+}
+.logout-right-bot-text {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+}
+.logout-right-bot-text h3{
+    text-align: center;
+    font-size: 16.5px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    color: red; 
+    font-style: italic;
+}
+.logout-right-customer-bottom {
+    margin-top: 35px;
+}
+.input-logout {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+.input-logout p {
+    padding-top: 25px;
+}
+.input-logout input {
+    width: 100%;
+    border: none;
+    padding-bottom: 12px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+.input-logout i {
+    position: absolute;
+    right: 12px;
+    bottom: 6px;
+    cursor: pointer;
+}
+.submit-logout-button {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19.5%;
+}
+.submit-logout-button p {
+    font-size: 10px !important;
+}
+.submit-logout-button a button {
+    width: 190px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    transition: all 0.3s ease;
+}
+.submit-logout-button a button:first-child {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    background-color: #ffff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.submit-logout-button a button:first-child:hover {
+    background-color: black;
+    color: #ffff;
+}
+.submit-logout-button  button:last-child {
+    border:  2px solid #BF8A49;
+    color: black ;
+    background-color: #ffff;
+    cursor: pointer;
+}
+/* logout FACEBOOK */
+.submit-logout-button a button {
+    width: 190px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    transition: all 0.3s ease;
+}
+.submit-logout-button a button:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.submit-logout-button a button:first-child:hover {
+    background-color: black;
+    color: #ffff;
+}
+.submit-logout-button  button:last-child {
+    border:  2px solid #BF8A49;
+    color: black ;
+    background-color: #ffff;
+    cursor: pointer;
+}
+/* logout GOOGLE*/ 
+.submit-logout-button a button {
+    width: 190px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    transition: all 0.3s ease;
+}
+.submit-logout-button a button:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.submit-logout-button a button:first-child:hover {
+    background-color: black;
+    color: #ffff;
+}
+.submit-logout-button  button:last-child {
+    border:  2px solid #BF8A49;
+    color: black ;
+    background-color: #ffff;
+    cursor: pointer;
+}
+.logout-right-customer-bottom h2 {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+}
+/* ----------------------------------------LOGIN-------------------------------------------------- */
+.login {
+    padding: 100px 0 0;
+}
+.login-left {
+    width: 15%;
+}
+.login-left {
+    width: 15%;
+}
+.login-right {
+    width: 85%;
+    border-left: 1px solid #dddddd;
+    padding-left: 35px;
+    margin-bottom: 35px;
+}
+.login-right-top-text:first-child {
+    flex: 2;
+    font-size: 16px;
+    font-family: var(--main-text-font);
+    /* font-weight: bold; */
+}
+.login-right-top-text {
+    flex: 1;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+.login-right-top-text p {
+    color: white;
+    text-align: center;
+}
+.login-left ul li {
+    padding: 12px 0;
+}
+.login-left ul li>a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--main-text-font);
+}
+.loginleft ul li ul li {
+    padding-left: 10px;
+}
+/* .introduce-left-li ul{
+    display: none;
+} */
+.login-left-li.block ul {
+    display: block;
+}
+.login-left ul li ul li a {
+    color: #333333;
+    font-size: 12px;
+}
+.login-left ul li a:hover{
+    text-decoration: underline;
+    padding-left: 40px;
+    transition: 0.5s;
+    color: red;
+}
+.login-left-li ul li a {
+    padding-left: 30px;
+}
+.login-left-li {
+    font-size: 16px;
+    font-weight: bold;
+}
+/* .introduce-left-li ul{
+    padding-left: 20px;
+} */
+.login-right-customer {
+    width: 100%;
+    padding-left: 35px;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.login-right-customer p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    word-spacing: 0.5px;
+}
+.login-right-bot-text {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+}
+.login-right-bot-text h3{
+    text-align: center;
+    font-size: 16.5px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    color: red; 
+    font-style: italic;
+}
+.login-right-customer-bottom {
+    margin-top: 35px;
+}
+.input-login {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+.input-login p {
+    padding-top: 25px;
+}
+.input-login input {
+    width: 100%;
+    border: none;
+    padding-bottom: 12px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+.input-login i {
+    position: absolute;
+    right: 12px;
+    bottom: 6px;
+    cursor: pointer;
+}
+.submit-login-button {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19.5%;
+}
+.submit-login-button p {
+    font-size: 10px !important;
+}
+.submit-login-button a button {
+    width: 190px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    transition: all 0.3s ease;
+}
+.submit-login-button a button:first-child {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    background-color: #ffff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.submit-login-button a button:first-child:hover {
+    background-color: black;
+    color: #ffff;
+}
+.submit-login-button  button:last-child {
+    border:  2px solid #BF8A49;
+    color: black ;
+    background-color: #ffff;
+    cursor: pointer;
+}
+/* LOGIN FACEBOOK */
+.submit-login-button a button {
+    width: 190px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    transition: all 0.3s ease;
+}
+.submit-login-button a button:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.submit-login-button a button:first-child:hover {
+    background-color: black;
+    color: #ffff;
+}
+.submit-login-button  button:last-child {
+    border:  2px solid #BF8A49;
+    color: black ;
+    background-color: #ffff;
+    cursor: pointer;
+}
+/* LOGIN GOOGLE*/ 
+.submit-login-button a button {
+    width: 190px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    transition: all 0.3s ease;
+}
+.submit-login-button a button:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.submit-login-button a button:first-child:hover {
+    background-color: black;
+    color: #ffff;
+}
+.submit-login-button  button:last-child {
+    border:  2px solid #BF8A49;
+    color: black ;
+    background-color: #ffff;
+    cursor: pointer;
+}
+.login-right-customer-bottom h2 {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+/* ----------------------------------------SUBMIT-LOGIN-------------------------------------------------- */
+.submit-login-button-1 {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19.5%;
+}
+.submit-login-button-1 p {
+    font-size: 10px !important;
+}
+.submit-login-button-1 a button {
+    width: 190px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    transition: all 0.3s ease;
+}
+.submit-login-button-1 a button:first-child {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    background-color: #ffff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.submit-login-button-1 a button:first-child:hover {
+    background-color: black;
+    color: #ffff;
+}
+.submit-login-button-1  button:last-child {
+    border:  2px solid #BF8A49;
+    color: black ;
+    background-color: #ffff;
+    cursor: pointer;
+}
+/* ----------------------------------------Footer-------------------------------------------------- */
+.footer {
+    padding: 100px 0 0;
+}
+.footer-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.footer-container p {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: var(--main-text-font);
+}
+.app-google {
+    margin: 25px 0;
+}
+.app-google img {
+    width: 150px;
+    cursor: p;
+}
+.input-email {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+.input-email input {
+    width: 100%;
+    border: none;
+    padding-bottom: 12px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+.input-email i {
+    position: absolute;
+    right: 12px;
+    bottom: 6px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #F6F6F6;
+}
+
+.footer-container{
+    background-color: #F6F6F6;
+}
+.footer-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px 0; */
+    margin-top: 15px;
+    width: 100%;
+    background-color: black;
+    line-height: 15px;
+}
+.footer-items li {
+    padding: 12px;
+    position: relative;
+}
+.footer-items li a {
+    color: #333;
+    font-family: var(--main-text-font);
+    font-weight: bold;
+    font-size: 12px;
+    color: white !important;
+}
+.footer-items li:hover {
+    padding-top: 5px;
+    transition: 0.3s;
+    text-decoration: underline;
+}   
+.footer-items li::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 50%;
+    background-color: #cccccc;
+    right: 0;
+}
+.footer-items li:last-child::after {
+    display: none;
+}
+.footer-items li:last-child i {
+    font-size: 12px;
+    margin-right: 12px;
+    color: #333333;
+}
+.footer-items li:last-child i:hover {
+    color: black;
+}
+.footer-items img {
+    width: 100px;
+}
+.footer-text {
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--main-text-font);
+    width: 100%;
+    background-color: black;
+    line-height: 15px;
+}
+.footer-text > p{
+    color: white;
+}
+.footer-bottom {
+    padding: 10px 0;
+    font-size: 12px;
+    font-family: var(--main-text-font);
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    /* margin-top: 30px; */
+    line-height: 15px;
+}
+.footer-bottom > p{
+    color: white;
+    font-size: 14px;
+}
+.footer-text > p{
+    font-size: 12px;
+    font-weight: normal;
+}
